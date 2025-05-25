@@ -28,6 +28,7 @@ export const NAV_LINKS: Link[] = [
   { href: "/about", label: "about" },
   { href: "/creator", label: "creator" },
   { href: "/tags", label: "tags" },
+  { href: "/webring", label: "webring" },
 ];
 
 export const SOCIAL_LINKS: Link[] = [
