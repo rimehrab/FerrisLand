@@ -43,6 +43,7 @@ const webring = defineCollection({
     linkedin: z.string().url().optional(),
     discord: z.string().url().optional(),
     stream: z.string().url().optional(),
+    telegram: z.string().url().optional(),
   }),
 });
 
