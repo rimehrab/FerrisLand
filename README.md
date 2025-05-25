@@ -1,5 +1,7 @@
-# realm
+# FerrisLand
+originally [realm](https://github.com/irvanmalik48/realm)
 
-Irvan Malik's personal blog.
+Mehrab Mahmud Udoy's personal blog.
 
+Original creator [Irvan Malik Azantha](https://github.com/irvanmalik48/)
 Licensed in RCCL.
