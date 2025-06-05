@@ -1,0 +1,57 @@
+---
+title: "Installing platform-tools on windows computer"
+description: "Step-by-step guide to download, install, and set up Android platform-tools (ADB and Fastboot) on Windows PC"
+date: 2025-06-05
+tags: ["android", "adb", "fastboot", "platform-tools", "windows", "android-development", "command-line", "tutorial", "installation-guide"]
+authors: ["rimehrab"]
+---
+### Download
+
+Get the latest version of the Platform Tools from the [Android developers website](https://developer.android.com/studio/releases/platform-tools) or from the link below
+
+[https://dl.google.com/android/repository/platform-tools-latest-windows.zip](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+
+### Create a folder
+
+Create a folder in a location which would be easy to access.
+
+In this screenshot i have created a folder named platform-tool in the c: drive
+
+![](https://doc.e.foundation/images/howtos/adb/create_folder.png)
+
+  
+
+### Extract the zip
+
+*   Next extract the zip file downloaded in the previous step into the newly created folder
+*   The extraction ( you do this by double clicking the zip file and showing it the location where to place the extracted files )
+
+![](https://doc.e.foundation/images/howtos/adb/browse_to_folder.png)
+
+*   Wait for the files to extracted completely. You would see a green progress line as shown in the screenshot while the extraction happens.
+
+![](https://doc.e.foundation/images/howtos/adb/extract_adbfiles.png)
+
+### Run the commands
+
+*   Browse to the folder where you have extracted the files. In this example it would be the `platform-tools` folder in `C:` drive
+*   You will need to open a command prompt window inside this folder for adb or fastboot to work.
+
+### Open a command prompt window inside a folder in windows
+
+*   One of the ways to open a command prompt window inside a folder in windows is to check the address bar
+*   A normal address bar in Windows will show you the file path of the current folder
+
+![](https://doc.e.foundation/images/howtos/adb/start_cmd_1.png)
+
+*   Select the address bar and type `cmd` and hit enter
+
+![](https://doc.e.foundation/images/howtos/adb/start_cmd_2.png)
+
+*   This will open a command prompt window as shown here
+
+![](https://doc.e.foundation/images/howtos/adb/cmd.png)
+
+*   In this command prompt window you can now execute your adb or fastboot commands.
+
+![](https://doc.e.foundation/images/howtos/adb/adb_executed.png)
