@@ -1,0 +1,81 @@
+---
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import Container from "@components/Container.astro";
+import { SITE } from "@consts";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="Credit" description={SITE.DESCRIPTION}>
+  <Container class="flex flex-col gap-y-6">
+    <Breadcrumbs items={[{ label: "Credit" }]} />
+
+    <section>
+      <div class="min-w-full">
+        <h1 class="mb-4 text-3xl font-bold">About the Original Creator: Irvan Malik</h1>
+        <div class="prose prose-neutral mb-4 dark:prose-invert">
+          <p>
+            This website was originally created by **Irvan Malik**. They are a detail-oriented Front End Developer with over 2 years of experience in crafting responsive and user-friendly web applications. They have a strong understanding of web design principles and know when to break best practices. Passionate about leveraging the latest technologies to enhance user experience and improve performance, they are committed to continuous learning and staying updated with industry trends.
+          </p>
+          <p>
+            As they would put it, "I code, that's it really."
+          </p>
+        </div>
+
+        <h2 class="mb-4 text-2xl font-bold">
+          Other Projects and Contributions by Irvan Malik
+        </h2>
+        <div class="prose prose-neutral mb-4 dark:prose-invert">
+          <ul>
+            <li>
+              <a href="https://dash.irvanma.eu.org">Status</a> - A status page for
+              their server. The <a href="https://github.com/dani3l0/Status"
+                >source code</a
+              > is available.
+            </li>
+            <li>
+              <a href="https://stats.irvanma.eu.org">GoatCounter</a> - A simple web
+              analytics service they hosted. No tracking of personal data was done.
+            </li>
+            <li>
+              <a href="https://git.irvanma.eu.org">Gitea</a> - A self-hosted Git
+              service where they hosted personal projects.
+            </li>
+            <li>
+              <a href="https://subsonic.irvanma.eu.org">Navidrome</a> - A personal
+              music server, akin to their own Spotify.
+            </li>
+            <li>
+              <a href="https://mc.irvanma.eu.org">Minecraft Server</a> - A Minecraft
+              server they hosted for friends (currently inactive).
+            </li>
+            <li>
+              <a href="https://gnuweeb.org">GNUWeeb Website</a> - A website for the
+              GNUWeeb community, where they were a contributor.
+            </li>
+          </ul>
+        </div>
+
+        <h2 class="mb-4 text-2xl font-bold">Irvan Malik's Stance on Politics and Other Topics</h2>
+        <div class="prose prose-neutral mb-4 dark:prose-invert">
+          <p>
+            Irvan Malik tended to stay away from politics and other controversial topics, preferring not to be involved.
+          </p>
+          <p>
+            They were a firm believer in the idea that everyone has their own opinions and beliefs and that they should be respected. They didn't want to impose their beliefs on others and expected the same in return. However, if forced to discuss politics, they warned that they weren't the best person to talk to about it.
+          </p>
+          <p>They believed you really wouldn't want to hear them talk about politics!</p>
+        </div>
+
+        <h2 class="mb-4 text-2xl font-bold">About the Original Website's Development</h2>
+        <div class="prose prose-neutral mb-4 dark:prose-invert">
+          <p>
+            This website was originally built using **Astro**, with **Tailwind CSS** and **shadcn/ui** for styling. It was statically generated because a full-blown shiny backend wasn't needed for a personal website. GoatCounter was used for analytics, with absolutely no tracking of personal data, simply to know how many people visited (probably none).
+          </p>
+          <p>
+            The website was hosted on **Vercel** and the source code was available on **GitHub**. The website and its posts were licensed under the **Realm Collectives Community License (RCCL)**. Some content may have been licensed under a different license.
+          </p>
+        </div>
+      </div>
+    </section>
+  </Container>
+</Layout>

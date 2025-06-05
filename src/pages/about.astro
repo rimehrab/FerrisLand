@@ -1,0 +1,33 @@
+---
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import Container from "@components/Container.astro";
+import { SITE } from "@consts";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="About Me" description={SITE.DESCRIPTION}>
+  <Container class="flex flex-col gap-y-6">
+    <Breadcrumbs items={[{ label: "About Me" }]} />
+
+    <section>
+      <div class="min-w-full">
+        <h1 class="mb-4 text-3xl font-bold">About Me</h1>
+        <div class="prose prose-neutral mb-4 dark:prose-invert">
+          <p>
+            Hello! I'm just getting started in the world of web development. I'm excited to learn and explore what I can create.
+          </p>
+        </div>
+
+        <h2 class="mb-4 text-2xl font-bold">About This Website</h2>
+        <div class="prose prose-neutral mb-4 dark:prose-invert">
+          <p>
+            This website is built with **Astro**, using **Tailwind CSS** and **shadcn/ui**. It was originally created by the talented **Irvan Malik**, and I'm using it as a foundation to learn and grow.
+          </p>
+          <p>
+            The content on this site is generally licensed under the **Realm Collectives Community License (RCCL)**, following the original project.
+          </p>
+        </div>
+      </div>
+    </section>
+  </Container>
+</Layout>
