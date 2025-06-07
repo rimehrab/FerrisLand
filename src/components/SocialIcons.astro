@@ -1,4 +1,3 @@
----
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "@components/Link.astro";
@@ -36,10 +35,11 @@ const iconMap = {
 };
 
 const getSocialLink = ({ href, label }: SocialLink) => ({
-  href: label === "Email" ? `mailto:${href}` : href,
+  href: label === "Email" && !href.startsWith("mailto:") ? `mailto:${href}` : href,
   ariaLabel: label,
   Icon: iconMap[label as keyof typeof iconMap] || MessageCircleQuestion,
 });
+
 ---
 
 <ul class={cn("not-prose flex flex-wrap gap-2", className)} role="list">
