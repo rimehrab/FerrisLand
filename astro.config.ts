@@ -19,7 +19,7 @@ import sectionize from "@hbsnow/rehype-sectionize";
 import vercel from "@astrojs/vercel/static";
 
 export default defineConfig({
-  site: "https://rimehrab.vercel.app/",
+  site: "https://rimehrab.is-a.dev/",
 
   integrations: [
     tailwind({
