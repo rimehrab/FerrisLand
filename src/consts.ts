@@ -34,6 +34,6 @@ export const NAV_LINKS: Link[] = [
 export const SOCIAL_LINKS: Link[] = [
   { href: "https://github.com/rimehrab", label: "GitHub" },
   { href: "https://t.me/rimehrab", label: "Telegram" },
-  { href: "mailto:rimehrab@pissmail.com", label: "Email" },
+  { href: "rimehrab@pissmail.com", label: "Email" },
   { href: "/rss.xml", label: "RSS" },
 ];
