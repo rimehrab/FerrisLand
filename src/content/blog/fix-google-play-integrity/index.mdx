@@ -1,0 +1,92 @@
+---
+title: "Fix Google Play Integrity"
+description: "This guide will walk you through the process of passing all three levels of Play Integrity: Basic, Device, and Strong. It supports both the legacy and new Play Integrity response formats. Make sure to follow each step carefully to ensure proper setup."
+date: 2025-06-21
+tags: ["android", "play-integrity", "zygisk", "magisk", "kernelsu", "trickystore", "apatch", "tutorial", "security", "adb"]
+authors: ["rimehrab"]
+---
+
+## Step 1: Remove Old Modules and Disable ROM/GMS Spoofing
+
+Before beginning:
+
+- Remove any previously installed Play Integrity-related modules from your device. This helps prevent potential conflicts during setup.
+
+- If you are using a custom ROM, make sure to disable any built-in integrity or GMS spoofing options. These spoofing features can interfere with Play Integrity results.
+
+## Step 2: Download the Required Components
+
+You will need to download and install the following modules and applications:
+
+**Zygisk Module (choose one):**
+- [ReZygisk (Recommended)](https://github.com/PerformanC/ReZygisk)
+- [NeoZygisk](https://github.com/JingMatrix/NeoZygisk)
+
+> **For MAGISK users only:**  
+> Make sure to **disable the default Zygisk** option from the MAGISK settings before using ReZygisk or NeoZygisk. This is required to avoid conflicts between MAGISK’s built-in Zygisk and the custom Zygisk modules.
+
+**Play Integrity Module (choose one):**
+- [PlayIntegrityFork (Recommended)](https://github.com/osm0sis/PlayIntegrityFork)  
+- [PlayIntegrityFix](#)  
+  > The developer of PlayIntegrityFix has deleted their GitHub account, so don't expect any further updates or active development on this module. It still works in many cases, but PlayIntegrityFork is currently the better-maintained option. *(You can try to use an archived version if available.)*
+
+**Tricky Tools (download both):**
+- [TrickyStore](https://github.com/5ec1cff/TrickyStore)  
+- [Tricky Addon – Update Target List](https://github.com/KOWX712/Tricky-Addon-Update-Target-List)
+
+**Other Required Application:**
+- [KSU Web UI Standalone](https://github.com/5ec1cff/KsuWebUIStandalone)  
+> **For MAGISK users only.**
+
+## Step 3: Install Modules
+
+Install the following modules using KernelSU or MAGISK:
+
+- ReZygisk or NeoZygisk  
+- PlayIntegrityFork or PlayIntegrityFix  
+- TrickyStore  
+- Tricky Addon
+
+Once installed, reboot your device to apply the changes.
+
+> **Note:**  
+> Install and run **KSU Web UI Standalone** as a separate application if you are a MAGISK user.
+
+## Step 4: Configure PlayIntegrityFix
+
+1. Open the KernelSU or MAGISK Manager.  
+2. Go to the Modules tab.  
+3. Locate the Play Integrity Fix module.  
+4. Tap **Action** or **Run the action script** to apply the configuration.  
+5. Make sure the option “Spoof SDK version to Play Store” is **disabled**.
+
+## Step 5: Configure TrickyStore
+
+1. Open the KernelSU or MAGISK Manager.  
+2. Go to the Modules tab.  
+3. Find the TrickyStore module.  
+4. Tap on the **Open** or **Action** button.  
+5. Tap the menu (three dots) and follow these steps:  
+   - Select All > Save  
+   - Deselect Unnecessary > Save  
+   - Set Valid Keybox  
+   - Set Security Patch > Get Security Patch Date > Save
+
+## STEP 6: Check Your Integrity
+
+Use the **Play Integrity API Checker** app to verify your results. You can get it from the [Google Play Store here](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck).
+
+If everything has been configured correctly, you should pass all of the following checks:
+
+- Basic Integrity  
+- Device Integrity  
+- Strong Integrity  
+
+This applies to both the legacy and new response formats.
+
+## Important Notes
+
+- Avoid checking Play Integrity too frequently.  
+  Repeated checks may raise suspicion and result in failing integrity even if the setup is correct.
+
+- Google always keeps messing with their Integrity stuff, so this is the working method as of now. It may not work in the future. If it doesn’t or if there’s a fix, I’ll try to update the blog.
