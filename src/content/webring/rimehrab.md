@@ -2,9 +2,9 @@
 name: "Mehrab Mahmud Udoy"
 webringKind: "Rookie, Weeb"
 avatar: "https://github.com/rimehrab.png"
-bio: "𝙸 𝚓𝚞𝚜𝚝 𝚠𝚊𝚗𝚗𝚊 𝚚𝚞𝚒𝚝 𝚎𝚟𝚎𝚛𝚢𝚝𝚑𝚒𝚗𝚐 𝚊𝚗𝚍 𝚐𝚘 𝚝𝚘 𝚜𝚕𝚎𝚎𝚙."
-website: "https://rimehrab.github.io"
+bio: "失敗した 、よし それは挑戦した証拠だ、さあ 立ち上がってもう一度やれ"
+website: "https://rimehrab.is-a.dev"
 telegram: "https://t.me/rimehrab"
 github: "https://github.com/rimehrab"
-mail: "rimehrab@pissmail.com"
+mail: "contact@rimehrab.is-a.dev"
 ---
