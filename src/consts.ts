@@ -17,10 +17,10 @@ export type Link = {
 export const SITE: Site = {
   TITLE: "Mehrab Mahmud Udoy",
   DESCRIPTION: "Welcome to my website.",
-  EMAIL: "rimehrab@pissmail.com",
+  EMAIL: "contact@rimehrab.is-a.dev",
   NUM_POSTS_ON_HOMEPAGE: 4,
   POSTS_PER_PAGE: 5,
-  SITEURL: "https://rimehrab.github.io",
+  SITEURL: "https://rimehrab.is-a.dev",
 };
 
 export const NAV_LINKS: Link[] = [
@@ -34,6 +34,6 @@ export const NAV_LINKS: Link[] = [
 export const SOCIAL_LINKS: Link[] = [
   { href: "https://github.com/rimehrab", label: "GitHub" },
   { href: "https://t.me/rimehrab", label: "Telegram" },
-  { href: "rimehrab@pissmail.com", label: "Email" },
+  { href: "contact@rimehrab.is-a.dev", label: "Email" },
   { href: "/rss.xml", label: "RSS" },
 ];
